@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registratiaon Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Register Now</h1>
+        <div class="form-input">
+            <form action = "#">
+                <div class="main-column-class">
+                    <div class="column-one">
+                        <input type="text" placeholder="*Your First Name" class="input-field" required>
+                        <input type="text" placeholder="*Your Last Name" class="input-field" required>
+                        <input type="number" placeholder="*Your Phone Number" class="input-field" required>
+                    </div>
+                    <div class="column-two">
+                        <input type="password" placeholder="*Your Password" class="input-field" required>
+                        <input type="password" placeholder="*Confirm Your Password" class="input-field" required>
+                        <input type="email" placeholder="*Your Email ID" class="input-field" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+<style>
+    .button{
+        width: 19%;
+        margin: auto;
+    }
+    .button input:hover{
+        background-color: rgb(8, 84, 206);
+    }
+    .button input{
+        cursor: pointer;
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+        background-color: rgb(53, 53, 255);
+        border: none;
+        height: 30px;
+        border-radius: 15px;
+        font-size: 15px;
+        width: 100%;
+    }
+    #title{
+        text-align: center;
+    }
+    body{
+        display: flex;
+        background: linear-gradient(to right, rgb(31, 16, 243), rgb(90, 90, 240));
+        font-family: 'Work Sans', sans-serif;
+        align-items: center;
+        justify-content: center;
+    }
+    .input-field{
+        margin: auto;
+        width: 70%;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid grey;
+    }
+    .container{
+        background: white;
+        width: 800px;
+        height: 320px;
+        border-radius: 10px;
+    }
+    .form-input{
+        margin: auto;
+    }
+    .column-one{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        height: 200px;
+    }
+    .column-two{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+    .main-column-class{
+        display: flex;
+        justify-content: space-between;
+    }
+
+</style>
+</body>
+</html>
